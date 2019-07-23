@@ -10,7 +10,9 @@ pipeline {
         stage('Wutao Test') {
             steps {
                 bat 'echo aaaaaaaa'
-                bat D:\\code\\test.bat
+                bat ```
+                D:\\code\\test.bat
+                ```
                 bat 'mvn -B -DskipTests clean package'
             }
         }
