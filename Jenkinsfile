@@ -1,6 +1,8 @@
 Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any
+    agent {
+        label '10.112.19.157'
+    }
     stages {
         stage('Build') {
             steps {
