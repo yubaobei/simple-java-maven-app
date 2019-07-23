@@ -2,7 +2,8 @@
 pipeline {
     agent any
     parameters {
-       gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
+       string(name: 'BRANCH', defaultValue: 'origin/master', description: 'Who should I say hello to?')
+
     }
     stages {
         stage('Build') {
