@@ -1,10 +1,6 @@
 
 pipeline {
     agent any
-    parameters {
-       string(name: 'BRANCH', defaultValue: 'origin/master', description: 'Who should I say hello to?')
-
-    }
     stages {
         stage('Build') {
             steps {
